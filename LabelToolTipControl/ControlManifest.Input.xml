@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
   <control namespace="Petronas" constructor="LabelToolTipControl" version="0.0.1" display-name-key="LabelToolTipControl" description-key="LabelToolTipControl description" control-type="standard" >
-   
     <external-service-usage enabled="false">
       
     </external-service-usage>
-    <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
-    <property name="controlLabel" display-name-key="controlLabelKey" description-key="controlLabelDesc" of-type="SingleLine.Text" usage="bound" required="true" />
+     <property name="controlLabel" display-name-key="controlLabelKey" description-key="controlLabelDesc" of-type="SingleLine.Text" usage="bound" required="true" />
      
     <resources>
       <code path="index.ts" order="1"/>

@@ -32,10 +32,10 @@ export const ToolTips = (props:{
 
   return (
     <div aria-owns={visible ? contentId : undefined} className={styles.root}>
-      <Label>{props.context.parameters.controlLabel.attributes?.Description}</Label>
+      <Label>{props.context.parameters.controlLabel.attributes?.DisplayName}</Label>
       <Tooltip
         content={{
-          children: props.context.parameters.controlLabel.attributes?.DisplayName,
+          children: props.context.parameters.controlLabel.attributes?.Description,
           id: contentId,
         }}
         positioning="above-start"
